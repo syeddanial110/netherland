@@ -14,10 +14,14 @@
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.6",
     "next": "14.2.3",
     "react": "^18",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-tilt": "^1.0.2",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "postcss": "^8",
