@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import bannerVideo from "../assets/videos/banner-gif.gif";
@@ -8,11 +8,17 @@ import mySvg from "../assets/icons/svg1.svg";
 import { FlipWords } from "@/components/FlipWords/FlipWords";
 import { SideScroll } from "@/components/SideScroll/SideScroll";
 import CardGrid from "@/components/CardGrid/CardGrid";
+import ChooseOpenCard from "@/components/ChooseOpenCard";
+import { Container } from 'react-bootstrap';
+import SupportCard from "@/components/SupportCard";
+import MissionCard from "@/components/MissionCard";
+import ConfidenceCard from "@/components/ConfidenceCard";
+import WithWithoutCard from "@/components/WithWithoutCard";
 
 export default function Home() {
   return (
     <>
-      <SideScroll>
+      {/* <SideScroll>
         <Grid
           container
           sx={{ minHeight: "90vh" }}
@@ -62,6 +68,23 @@ export default function Home() {
       <Grid container>
         <Grid item xs={12}>
           <CardGrid />
+        </Grid>
+      </Grid> */}
+      <Grid container>
+        <Grid item xs={12} marginBottom={3}>
+          <ChooseOpenCard />
+        </Grid>
+        <Grid item xs={12}>
+          <SupportCard />
+        </Grid>
+        <Grid item xs={12} justifyItems={'center'} display={'grid'}>
+          <MissionCard />
+        </Grid>
+        <Grid item xs={12} sx={{ backgroundColor: '#282828' }}>
+          <ConfidenceCard />
+        </Grid>
+        <Grid item xs={12}>
+          <WithWithoutCard />
         </Grid>
       </Grid>
     </>
