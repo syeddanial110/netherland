@@ -10,12 +10,14 @@ const WithWithoutCard = () => {
         <Container>
             <Grid container marginY={5} rowGap={6}>
                 <Grid item xs={12} md={12} className='backImage'
-                    // sx={{
-                    //     backgroundImage: `url(${Images.earthImage})`,
-                    //     backgroundSize: 'cover',
-                    //     backgroundRepeat: 'no-repeat',
-                    //     backgroundPosition: 'center'
-                    // }}
+                    sx={{
+                        backgroundImage: `url(${Images.earthImage})`,
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        width: '100vh',
+                        height: '100vh',
+                    }}
                 >
                     {/* <Image src={Images.earthImage} layout="responsive" /> */}
                     <Box>

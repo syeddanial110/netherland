@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import CustomText from '../CustomText';
 import { SVGs } from '@/constants/Images';
 import Image from 'next/image';
@@ -41,7 +41,9 @@ const data = [
 const MissionCard = () => {
     return (
         <Container>
-            <CustomText text={'OUR MISSION'} fontSize={48} marginRight={1.5} fontWeight={600} />
+            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} xs={6} md={12}>
+                <CustomText text={'OUR MISSION'} fontSize={48} marginRight={1.5} fontWeight={600} />
+            </Box>
             <Grid container marginY={5} rowGap={6}>
                 {data.map(val => (
                     <Grid item xs={6} md={4} key={val.id} sx={{ backgroundColor: '#282828', padding: 8 }}>

@@ -14,6 +14,9 @@ import SupportCard from "@/components/SupportCard";
 import MissionCard from "@/components/MissionCard";
 import ConfidenceCard from "@/components/ConfidenceCard";
 import WithWithoutCard from "@/components/WithWithoutCard";
+import PartnerCard from "@/components/PartnerCard";
+import HowCard from "@/components/HowCard";
+import TechnologyCard from "@/components/TechnologyCard";
 
 export default function Home() {
   return (
@@ -83,8 +86,17 @@ export default function Home() {
         <Grid item xs={12} sx={{ backgroundColor: '#282828' }}>
           <ConfidenceCard />
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <WithWithoutCard />
+        </Grid> */}
+        <Grid item xs={12}>
+          <PartnerCard />
+        </Grid>
+        <Grid item xs={12}>
+          <HowCard />
+        </Grid>
+        <Grid item xs={12}>
+          <TechnologyCard />
         </Grid>
       </Grid>
     </>

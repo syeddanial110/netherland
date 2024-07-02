@@ -1,7 +1,6 @@
-.backImage {
-    backgroundImage: url('../../assets/images/earthImage.png');
-    /* backgroundImage: `url(${Images.earthImage})`; */
-    backgroundSize: 'cover';
-    backgroundRepeat: 'no-repeat';
-    backgroundPosition: 'center';
-}
+/* .backImage {
+    background-image: url('../../assets/images/earthImage.png');
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-position: 'center';
+} */
