@@ -17,6 +17,8 @@ import WithWithoutCard from "@/components/WithWithoutCard";
 import PartnerCard from "@/components/PartnerCard";
 import HowCard from "@/components/HowCard";
 import TechnologyCard from "@/components/TechnologyCard";
+import ExperienceCard from "@/components/ExperienceCard";
+import PastWorkCard from "@/components/PastWorkCard";
 
 export default function Home() {
   return (
@@ -97,6 +99,12 @@ export default function Home() {
         </Grid>
         <Grid item xs={12}>
           <TechnologyCard />
+        </Grid>
+        <Grid item xs={12}>
+          <ExperienceCard />
+        </Grid>
+        <Grid item xs={12}>
+          <PastWorkCard />
         </Grid>
       </Grid>
     </>

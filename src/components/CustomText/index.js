@@ -10,7 +10,8 @@ const CustomText = ({
     whiteSpace,
     fontWeight,
     width,
-    marginBottom
+    marginBottom,
+    marginTop,
 }) => {
     return (
         <Typography
@@ -24,6 +25,7 @@ const CustomText = ({
             },
             width ? { width: width } : null,
             marginBottom ? { marginBottom: marginBottom } : null,
+            marginTop ? { marginTop: marginTop } : null,
             ]}
         >
             {text}

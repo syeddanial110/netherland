@@ -2,6 +2,7 @@ import { Images } from '@/constants/Images';
 import { Box } from '@mui/material';
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import CustomText from '../CustomText';
 
 const data = [
     {
@@ -51,7 +52,8 @@ const TechnologyCard = () => {
                 marginTop={10}
                 marginBottom={5}
             >
-                <p>TECHNOLOGIES WE<span> DEAL IN </span></p>
+                <CustomText text={'TECHNOLOGIES WE'} marginRight={1} color={'#fff'} fontSize={30} fontWeight={600} />
+                <CustomText text={'DEAL IN'} color={'#26CB99'} fontSize={30} fontWeight={600} />
             </Box>
         </Container>
     );

@@ -21,6 +21,10 @@ import nearshore from '../../assets/icons/nearshore.svg';
 import outsourcing from '../../assets/icons/outsourcing.svg';
 import services from '../../assets/icons/services.svg';
 import turnkey from '../../assets/icons/turnkey.svg';
+import experience from '../../assets/icons/experience.svg';
+import countries from '../../assets/icons/countries.svg';
+import projects from '../../assets/icons/projects.svg';
+import growth from '../../assets/icons/growth.svg';
 
 import earthImage from '../../assets/images/earthImage.png';
 import DatabaseImage from '../../assets/images/DatabaseImage.png';
@@ -37,6 +41,10 @@ import digital from '../../assets/images/digital.png';
 import subcription from '../../assets/images/subcription.png';
 
 export const SVGs = {
+    growth: growth,
+    projects: projects,
+    countries: countries,
+    experience: experience,
     turnkey: turnkey,
     services: services,
     outsourcing: outsourcing,

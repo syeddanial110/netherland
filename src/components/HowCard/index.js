@@ -31,15 +31,15 @@ const data = [
 const HowCard = () => {
     return (
         <Container>
-            <Box
-                sx={{ display: 'flex', justifyContent: 'center' }}
-                xs={6}
-                md={12}
+            <CustomText
+                text={'HOW WE DO IT'}
+                color={'#fff'}
                 marginTop={10}
                 marginBottom={5}
-            >
-                <p>HOW WE DO IT</p>
-            </Box>
+                fontSize={30}
+                fontWeight={600}
+                textAlign={'center'}
+            />
             <Grid container marginY={3}>
                 {data.map(val => (
                     <Grid item key={val.id} xs={6} md={3}>
