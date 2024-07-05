@@ -25,6 +25,13 @@ import experience from '../../assets/icons/experience.svg';
 import countries from '../../assets/icons/countries.svg';
 import projects from '../../assets/icons/projects.svg';
 import growth from '../../assets/icons/growth.svg';
+import marker from '../../assets/icons/marker.svg';
+import phone from '../../assets/icons/phone.svg';
+import mail from '../../assets/icons/mail.svg';
+import fb from '../../assets/icons/fb.svg';
+import twitter from '../../assets/icons/twitter.svg';
+import vimeo from '../../assets/icons/vimeo.svg';
+import youtube from '../../assets/icons/youtube.svg';
 
 import earthImage from '../../assets/images/earthImage.png';
 import DatabaseImage from '../../assets/images/DatabaseImage.png';
@@ -39,8 +46,25 @@ import ItManagement from '../../assets/images/ItManagement.png';
 import DevOps from '../../assets/images/DevOps.png';
 import digital from '../../assets/images/digital.png';
 import subcription from '../../assets/images/subcription.png';
+import ericsson from '../../assets/images/ericsson.png';
+import vmWare from '../../assets/images/vmWare.png';
+import serviceNow from '../../assets/images/serviceNow.png';
+import amazon from '../../assets/images/amazon.png';
+import newsletter from '../../assets/images/newsletter.png';
+import webinar from '../../assets/images/webinar.png';
+import video from '../../assets/images/video.png';
+import blog from '../../assets/images/blog.png';
+import contactUsBg from '../../assets/images/contactUsBg.png';
+import logo from '../../assets/images/logo.png';
 
 export const SVGs = {
+    youtube: youtube,
+    vimeo: vimeo,
+    twitter: twitter,
+    fb: fb,
+    mail: mail,
+    phone: phone,
+    marker: marker,
     growth: growth,
     projects: projects,
     countries: countries,
@@ -71,6 +95,16 @@ export const SVGs = {
 };
 
 export const Images = {
+    logo: logo,
+    contactUsBg: contactUsBg,
+    blog: blog,
+    video: video,
+    webinar: webinar,
+    newsletter: newsletter,
+    amazon: amazon,
+    serviceNow: serviceNow,
+    vmWare: vmWare,
+    ericsson: ericsson,
     subcription: subcription,
     digital: digital,
     DevOps: DevOps,

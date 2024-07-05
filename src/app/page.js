@@ -19,6 +19,9 @@ import HowCard from "@/components/HowCard";
 import TechnologyCard from "@/components/TechnologyCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import PastWorkCard from "@/components/PastWorkCard";
+import PowerCard from "@/components/PowerCard";
+import ContactUsCard from "@/components/ContactUsCard";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -105,6 +108,15 @@ export default function Home() {
         </Grid>
         <Grid item xs={12}>
           <PastWorkCard />
+        </Grid>
+        <Grid item xs={12}>
+          <PowerCard />
+        </Grid>
+        <Grid item xs={12}>
+          <ContactUsCard />
+        </Grid>
+        <Grid item xs={12} sx={{ backgroundColor: '#282828' }}>
+          <Footer />
         </Grid>
       </Grid>
     </>
