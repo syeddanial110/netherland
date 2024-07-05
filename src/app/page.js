@@ -9,7 +9,7 @@ import { FlipWords } from "@/components/FlipWords/FlipWords";
 import { SideScroll } from "@/components/SideScroll/SideScroll";
 import CardGrid from "@/components/CardGrid/CardGrid";
 import ChooseOpenCard from "@/components/ChooseOpenCard";
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 import SupportCard from "@/components/SupportCard";
 import MissionCard from "@/components/MissionCard";
 import ConfidenceCard from "@/components/ConfidenceCard";
@@ -22,6 +22,7 @@ import PastWorkCard from "@/components/PastWorkCard";
 import PowerCard from "@/components/PowerCard";
 import ContactUsCard from "@/components/ContactUsCard";
 import Footer from "@/components/Footer";
+import HomeBanner from "@/container/Home/HomeBanner";
 
 export default function Home() {
   return (
@@ -79,16 +80,19 @@ export default function Home() {
         </Grid>
       </Grid> */}
       <Grid container>
+        <Grid item xs={12}>
+          <HomeBanner />
+        </Grid>
         <Grid item xs={12} marginBottom={3}>
           <ChooseOpenCard />
         </Grid>
         <Grid item xs={12}>
           <SupportCard />
         </Grid>
-        <Grid item xs={12} justifyItems={'center'} display={'grid'}>
+        <Grid item xs={12} justifyItems={"center"} display={"grid"}>
           <MissionCard />
         </Grid>
-        <Grid item xs={12} sx={{ backgroundColor: '#282828' }}>
+        <Grid item xs={12} sx={{ backgroundColor: "#282828" }}>
           <ConfidenceCard />
         </Grid>
         {/* <Grid item xs={12}>
@@ -115,7 +119,7 @@ export default function Home() {
         <Grid item xs={12}>
           <ContactUsCard />
         </Grid>
-        <Grid item xs={12} sx={{ backgroundColor: '#282828' }}>
+        <Grid item xs={12} sx={{ backgroundColor: "#282828" }}>
           <Footer />
         </Grid>
       </Grid>

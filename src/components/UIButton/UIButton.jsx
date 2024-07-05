@@ -3,17 +3,17 @@ import "./button.css";
 import { Button } from "@mui/material";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import { UIStyledContainedButton, UIStyledIconButton } from "./ui";
 
-const UIButton = ({ title, isVideoIcon, isArrow }) => {
+const UIButton = ({ title, btnType, isArrow }) => {
   return (
-    <Button
-      className={`${isVideoIcon ? "videoBtn" : "arrowBtn"}`}
-      endIcon={
-        isVideoIcon ? <PlayCircleIcon /> : isArrow ? <TrendingFlatIcon className="arrowIcon" /> : ""
-      }
-    >
-      {title}
-    </Button>
+    <>
+      {btnType == "contained" ? (
+        <UIStyledContainedButton>{title}</UIStyledContainedButton>
+      ) : (
+        <UIStyledIconButton>{title}</UIStyledIconButton>
+      )}
+    </>
   );
 };
 

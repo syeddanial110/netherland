@@ -23,3 +23,11 @@ h5,
 h6 {
   color: white !important;
 }
+
+.btn-dropdown > a {
+  color: white !important;
+}
+
+.icon-nav > span {
+  color: white;
+}
