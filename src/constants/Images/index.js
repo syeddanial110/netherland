@@ -32,6 +32,7 @@ import fb from '../../assets/icons/fb.svg';
 import twitter from '../../assets/icons/twitter.svg';
 import vimeo from '../../assets/icons/vimeo.svg';
 import youtube from '../../assets/icons/youtube.svg';
+import DatabasePlatformSvg from '../../assets/icons/databasePlatform.svg';
 
 import earthImage from '../../assets/images/earthImage.png';
 import DatabaseImage from '../../assets/images/DatabaseImage.png';
@@ -77,6 +78,7 @@ export const SVGs = {
     KubernetesSvg: KubernetesSvg,
     UnifiedSvg: UnifiedSvg,
     StreamingSvg: StreamingSvg,
+    databasePlatoform: DatabasePlatformSvg,
     rightArrow: rightArrow,
     cloudIcon: cloudIcon,
     continuityIcon: continuityIcon,

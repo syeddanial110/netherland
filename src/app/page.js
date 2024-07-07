@@ -79,11 +79,11 @@ export default function Home() {
           <CardGrid />
         </Grid>
       </Grid> */}
-      <Grid container>
+      <Grid container gap={6}>
         <Grid item xs={12}>
           <HomeBanner />
         </Grid>
-        <Grid item xs={12} marginBottom={3}>
+        <Grid item xs={12} mt={3}>
           <ChooseOpenCard />
         </Grid>
         <Grid item xs={12}>

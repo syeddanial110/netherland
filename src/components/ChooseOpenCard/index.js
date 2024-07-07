@@ -1,9 +1,8 @@
 import React from "react";
 import CustomText from "../CustomText";
-import { Box, Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import { SVGs } from "@/constants/Images";
 import Image from "next/image";
-import { Container } from "react-bootstrap";
 
 const data = [
   {
@@ -46,7 +45,7 @@ const data = [
 
 const ChooseOpenCard = () => {
   return (
-    <Container>
+    <Container maxWidth='lg' >
       <Box
         sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}
         xs={6}

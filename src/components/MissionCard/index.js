@@ -44,9 +44,9 @@ const MissionCard = () => {
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} xs={6} md={12}>
                 <CustomText text={'OUR MISSION'} fontSize={48} marginRight={1.5} fontWeight={600} />
             </Box>
-            <Grid container marginY={5} rowGap={6}>
+            <Grid container marginY={5} gap={2} justifyContent='center'>
                 {data.map(val => (
-                    <Grid item xs={6} md={4} key={val.id} sx={{ backgroundColor: '#282828', padding: 8 }}>
+                    <Grid item xs={6} md={3.5} key={val.id} sx={{ backgroundColor: '#282828', padding: 8 }}>
                         <Image src={val?.image} style={{ marginBottom: 50 }} width={100} height={100} />
                         <CustomText text={val?.title} />
                     </Grid>
