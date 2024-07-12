@@ -1,5 +1,5 @@
-"use client";
-import { createTheme } from "@mui/material/styles";
+'use client'
+import { createTheme } from '@mui/material/styles'
 
 // export const roboto = Roboto({
 //   weight: ['300', '400', '500', '700'],
@@ -12,38 +12,34 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#26CB99",
-      yellowShade: "#BB9C00",
-      yellowShade2: "#ad9726",
-      blueShade1: "#292A46",
-      blueShade2: "#17182A",
-      blueShade3: "#1F0E4A",
-      blueShade4: "#4770F6",
+      main: '#26CB99',
+      yellowShade: '#BB9C00',
+      yellowShade2: '#ad9726',
+      blueShade1: '#292A46',
+      blueShade2: '#17182A',
+      blueShade3: '#1F0E4A',
+      blueShade4: '#4770F6',
 
-      greyShade1: "#F6F6F6",
-      greyShade2: "#F3F3F3",
-      greyShade3: "#EFEFEF",
-      greyShade4: "#B7B7B7",
-      greyShade5: "#CBCBCB",
-      greyShade6: "#656565",
-      greyShade7: "#707070",
-      greyShade8: "#E2E2E2",
+      greyShade1: '#F6F6F6',
+      greyShade2: '#282828',
 
-      blackShade1: "#282828",
-      whiteShade: "#F9F9F9",
-      whiteShade1: "#CFCFCF",
-      greenShade1: "#63A5B1",
-      brownShade1: "#BFB2A1",
-      borwnShade2: "#6D6D6D",
-      black: "#000000",
-      headerShade: "#222222e0",
+      blackShade1: '#282828',
+      whiteShade: '#F9F9F9',
+      whiteShade1: '#CFCFCF',
+      greenShade1: '#63A5B1',
+      brownShade1: '#BFB2A1',
+      borwnShade2: '#6D6D6D',
+      black: '#000000',
+      headerShade: '#222222e0',
+
+      white: '#ffffff',
     },
     secondary: {
-      main: "#20B14C",
-      error: "#F2424E",
+      main: '#20B14C',
+      error: '#F2424E',
     },
     error: {
-      main: "#f4f4f4",
+      main: '#f4f4f4',
     },
   },
   typography: {},
@@ -58,6 +54,6 @@ const theme = createTheme({
       xxxl: 2400,
     },
   },
-});
+})
 
-export default theme;
+export default theme

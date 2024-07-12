@@ -5,35 +5,42 @@ import './styles.css'
 import { Images, SVGs } from '@/constants/Images'
 import Image from 'next/image'
 import CustomText from '../CustomText'
+import { PartnerBgBox } from './ui'
+import databaseImg from '../../assets/images/DatabaseImage.png'
+import streamingImg from '../../assets/images/streamingImage.png'
+import unifiedImg from '../../assets/images/UnifiedImage.png'
+import kubernetesImg from '../../assets/images/KubernetesImage.png'
+import devOpsImg from '../../assets/images/DevOpsImage.png'
+import UITypography from '../UITypography/UITypography'
 
 const data = [
   {
     id: 1,
-    bgImage: Images.DatabaseImage,
+    bgImage: databaseImg,
     icon: SVGs.databasePlatoform,
     title: `Database${`\n`}Platform`,
   },
   {
     id: 2,
-    bgImage: Images.streamingImage,
+    bgImage: streamingImg,
     icon: SVGs.StreamingSvg,
     title: `Streaming${`\n`}Data Pipeline`,
   },
   {
     id: 3,
-    bgImage: Images.UnifiedImage,
+    bgImage: unifiedImg,
     icon: SVGs.UnifiedSvg,
     title: `Unified${`\n`}Observability`,
   },
   {
     id: 4,
-    bgImage: Images.KubernetesImage,
+    bgImage: kubernetesImg,
     icon: SVGs.KubernetesSvg,
     title: `Kubernetes${`\n`}and Cloud`,
   },
   {
     id: 5,
-    bgImage: Images.DevOpsImage,
+    bgImage: devOpsImg,
     icon: SVGs.DevOpsSvg,
     title: `DevOps and${`\n`}Automation`,
   },
@@ -67,31 +74,42 @@ const PartnerCard = () => {
             item
             key={val.id}
             xs={3}
-            md={2}
+            md={2.2}
             display="flex"
             flexDirection="column"
             alignItems="center"
-            gap={2}
             justifyContent={'center'}
           >
-            <Box
-              sx={{
-                width: 70,
-                height: 70,
-                borderRadius: 1,
-                backgroundColor: '#26CB99',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <Image src={val.icon.src} width={50} height={50} />
-            </Box>
-            <CustomText
-              text={val.title}
-              whiteSpace={'pre-line'}
-              textAlign={'center'}
-            />
+            <PartnerBgBox img={val.bgImage}>
+              <Box
+                sx={{
+                  position: 'absolute',
+                  top: 270,
+                  left: '20%',
+                  right: '50%',
+                  transform: 'translateX(50%)',
+                  width: 90,
+                }}
+              >
+                <Box
+                  sx={{
+                    width: 70,
+                    height: 70,
+                    borderRadius: 1,
+                    backgroundColor: '#26CB99',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    margin: 'auto',
+                  }}
+                >
+                  <Image src={val.icon.src} width={50} height={50} />
+                </Box>
+                <Box sx={{ width: '100%', mt: 1 }}>
+                  <UITypography title={val.title} textAlign="center" />
+                </Box>
+              </Box>
+            </PartnerBgBox>
           </Grid>
         ))}
       </Grid>
@@ -99,7 +117,7 @@ const PartnerCard = () => {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          marginTop: 10,
+          marginTop: 20,
         }}
       >
         <Box

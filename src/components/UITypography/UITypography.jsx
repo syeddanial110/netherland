@@ -9,15 +9,15 @@ import {
   UISubHeadingTypography,
 } from "./ui";
 
-const UITypography = ({ title, type, isWhite, sx, ...props }) => {
+const UITypography = ({ title, type, isWhite, isGreen, sx, ...props }) => {
   return (
     <>
       {type == "mainHeading" ? (
-        <UIMainHeadingTypography sx={sx} {...props}>
+        <UIMainHeadingTypography sx={sx} isGreen={isGreen} {...props}>
           {title}
         </UIMainHeadingTypography>
       ) : type == "heading" ? (
-        <UIHeadingTypography isWhite={isWhite} sx={sx} {...props}>
+        <UIHeadingTypography isWhite={isWhite} isGreen={isGreen} sx={sx} {...props}>
           {title}
         </UIHeadingTypography>
       ) : type == "subheading" ? (

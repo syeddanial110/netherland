@@ -5,11 +5,11 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import { UIStyledContainedButton, UIStyledIconButton } from "./ui";
 
-const UIButton = ({ title, btnType, isArrow }) => {
+const UIButton = ({ title, btnType, isArrow, ...props }) => {
   return (
     <>
       {btnType == "contained" ? (
-        <UIStyledContainedButton>{title}</UIStyledContainedButton>
+        <UIStyledContainedButton {...props}>{title}</UIStyledContainedButton>
       ) : (
         <UIStyledIconButton>{title}</UIStyledIconButton>
       )}

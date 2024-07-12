@@ -95,9 +95,9 @@ export default function Home() {
         <Grid item xs={12} sx={{ backgroundColor: "#282828" }}>
           <ConfidenceCard />
         </Grid>
-        {/* <Grid item xs={12}>
+        <Grid item xs={12}>
           <WithWithoutCard />
-        </Grid> */}
+        </Grid>
         <Grid item xs={12}>
           <PartnerCard />
         </Grid>

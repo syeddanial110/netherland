@@ -30,6 +30,7 @@ const WebNavigation = () => {
                     title={item.title}
                     sx={{
                       fontWeight: 400,
+                      fontSize: "18px",
                       "&:hover": {
                         cursor: "pointer",
                       },
@@ -42,7 +43,7 @@ const WebNavigation = () => {
                   <NavDropdown
                     title={item.title}
                     id="basic-nav-dropdown"
-                    style={{ color: "white !important" }}
+                    style={{ color: "white !important", fontSize: "18px" }}
                   >
                     <NavDropdown.Item href="#action/3.1">
                       Action
