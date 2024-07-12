@@ -68,12 +68,13 @@ const PartnerCard = () => {
         columnGap={2}
         display={'flex'}
         justifyContent={'center'}
+        gap={{xs: 15, md: 2}}
       >
         {data.map((val) => (
           <Grid
             item
             key={val.id}
-            xs={3}
+            xs={10}
             md={2.2}
             display="flex"
             flexDirection="column"

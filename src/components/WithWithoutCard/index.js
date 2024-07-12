@@ -40,7 +40,7 @@ const WithWithoutCard = () => {
       <Grid container>
         <Grid
           item
-          xs={6}
+          xs={12} md={6}
           sx={{
             borderRightWidth: '6px',
             borderStyle: 'solid',
@@ -59,7 +59,7 @@ const WithWithoutCard = () => {
             </Box>
           </UIBackgroundBox>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6}>
           <UIBackgroundBox
             sx={{
               borderTopRightRadius: '15px',
@@ -75,7 +75,7 @@ const WithWithoutCard = () => {
         <Grid item xs={12}>
           <UITextBox>
             <Grid container>
-              <Grid item xs={6}>
+              <Grid item xs={12} md={6}>
                 <List>
                   {list1.map((item) => {
                     return (
@@ -89,7 +89,7 @@ const WithWithoutCard = () => {
                   })}
                 </List>
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xs={12} md={5}>
                 <List>
                   {list2.map((item) => {
                     return (

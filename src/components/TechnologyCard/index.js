@@ -55,7 +55,12 @@ const TechnologyCard = () => {
   return (
     <Container>
       <Box
-        sx={{ display: 'flex', justifyContent: 'center' }}
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
         xs={6}
         md={12}
         marginTop={10}
@@ -77,7 +82,7 @@ const TechnologyCard = () => {
       </Box>
 
       <Grid container gap={2}>
-        <Grid item xs={7}>
+        <Grid item xs={12} md={7}>
           <TechnologyBgBox bgImg={dataMonitoringImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography
@@ -87,14 +92,14 @@ const TechnologyCard = () => {
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <TechnologyBgBox bgImg={softwareDevelopmentImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography type="subheading" title="Software Development" />
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={12} md={5}>
           <TechnologyBgBox bgImg={machineLearningImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography
@@ -104,28 +109,28 @@ const TechnologyCard = () => {
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={3}>
           <TechnologyBgBox bgImg={itManagementImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography type="subheading" title="IT Management" />
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} md={3}>
           <TechnologyBgBox bgImg={devOpsImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography type="subheading" title="DevOps" />
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={5.5}>
+        <Grid item xs={12} md={5.5}>
           <TechnologyBgBox bgImg={digitalTranformationImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography type="subheading" title="Digital Transformation" />
             </Box>
           </TechnologyBgBox>
         </Grid>
-        <Grid item xs={5.5}>
+        <Grid item xs={12} md={5.5}>
           <TechnologyBgBox bgImg={subcriptionImg}>
             <Box sx={{ position: 'absolute', bottom: 10, left: 20 }}>
               <UITypography type="subheading" title="Software Subscription" />

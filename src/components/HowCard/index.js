@@ -41,9 +41,9 @@ const HowCard = () => {
           fontWeight={600}
           textAlign={'center'}
         />
-        <Grid container marginY={3}>
+        <Grid container marginY={3} gap={{ xs: 2, md: 0 }}>
           {data.map((val) => (
-            <Grid item key={val.id} xs={6} md={3}>
+            <Grid item key={val.id} xs={5.5} md={3}>
               <Box
                 sx={{
                   display: 'flex',
