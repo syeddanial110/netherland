@@ -25,7 +25,7 @@ const ScrollAnimationEarth = () => {
     let tlBox = gsap.timeline({
       scrollTrigger: {
         trigger: ".earthImg",
-        markers: true,
+        // markers: true,
         start: "top 50%",
         end: "top 0%",
         scrub: 1,
