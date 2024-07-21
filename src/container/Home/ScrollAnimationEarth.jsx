@@ -87,6 +87,7 @@ const ScrollAnimationEarth = () => {
           left: 50,
           display: "flex",
           flexDirection: "column",
+          alignItems: "center",
           gap: 3,
           height: "500px",
         }}
