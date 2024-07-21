@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import { SVGs } from '@/constants/Images'
 import Image from 'next/image'
 import CustomText from '../CustomText'
+import ScrollAnimationEarth from '@/container/Home/ScrollAnimationEarth'
 
 const data = [
   {
@@ -69,7 +70,9 @@ const HowCard = () => {
         </Grid>
       </Container>
       <Grid container>
-        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
+          <ScrollAnimationEarth />
+        </Grid>
       </Grid>
     </>
   )
