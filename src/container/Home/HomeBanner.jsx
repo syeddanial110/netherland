@@ -10,10 +10,14 @@ const HomeBanner = () => {
         <Grid item xs={12} sx={{ position: "relative" }}>
           <Box
             sx={{
-              height: "80vh",
-              width: "90%",
+              height: "100vh",
+              width: "85%",
               display: "flex",
               justifyContent: "flex-end",
+              // backgroundImage: `url("${bannerImg.src}")`,
+              // backgroundSize: "contain",
+              // backgroundPosition: "center",
+              // backgroundRepeat: "no-repeat",
             }}
           >
             <AnimationBanner />
