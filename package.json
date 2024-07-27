@@ -24,7 +24,9 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
+    "react-multilevel-dropdown": "^4.0.0",
     "react-tilt": "^1.0.2",
+    "sass": "^1.77.8",
     "swiper": "^11.1.4",
     "tailwind-merge": "^2.3.0",
     "yup": "^1.4.0"

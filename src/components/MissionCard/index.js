@@ -48,7 +48,7 @@ const MissionCard = () => {
       >
         <CustomText
           text={'OUR MISSION'}
-          fontSize={48}
+          fontSize={{ xs: '22px', md: "35px" }}
           marginRight={1.5}
           fontWeight={600}
         />
@@ -65,8 +65,8 @@ const MissionCard = () => {
             <Image
               src={val?.image}
               style={{ marginBottom: 50 }}
-              width={100}
-              height={100}
+              width={80}
+              height={80}
             />
             <CustomText text={val?.title} />
           </Grid>

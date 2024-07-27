@@ -169,3 +169,105 @@ h6 {
 } */
 
 /* banner animation css end */
+
+
+
+
+/* header css  */
+.dropdownButton {
+  background-color: transparent !important;
+  color: white !important;
+  padding: 0px 0px 0px 0px !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+.dropdownButton:focus {
+  box-shadow: 0 0 0 0px rgba(235, 236, 240, 0.4) !important;
+}
+
+.dropDownMenu {
+  margin-left: auto !important;
+  display: block;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-size: 18px !important;
+}
+
+.subnameDropdown {
+  left: 0%;
+  right: 0% !important;
+  background-color: #575757 !important;
+  border-radius: 25px !important;
+  width: 85vw !important;
+  z-index: 9999999 !important;
+  transform: translate(-60%);
+}
+
+.subLinkTitle:hover {
+  background-color: #3c828e;
+  color: white;
+}
+
+.Dropdown_menu__VJLNl.Dropdown_menu-left__Js_a5.subnameDropdown {
+  max-height: 440px;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00b76e;
+}
+
+/* .subnameDropdown > ul >div > div> div > div> div > p */
+
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  .subnameDropdown {
+    left: 0%;
+    right: 0% !important;
+    width: 60vw !important;
+    transform: translate(-50%);
+  }
+}
+@media screen and (min-width: 1451px) and (max-width: 1699px) {
+  .subnameDropdown {
+    left: 0%;
+    right: 0% !important;
+    width: 75vw !important;
+    transform: translate(-50%);
+  }
+}
+@media screen and (min-width: 1700px) and (max-width: 2400px) {
+  .subnameDropdown {
+    left: 0%;
+    right: 0% !important;
+    width: 60vw !important;
+    transform: translate(-50%);
+  }
+}
+@media screen and (min-width: 2401px) and (max-width: 3400px) {
+  .subnameDropdown {
+    left: 0%;
+    right: 0% !important;
+    width: 50vw !important;
+    transform: translate(-50%);
+  }
+}
+
+.subLinkDropdown {
+  background-color: #575757 !important;
+  border-radius: 25px;
+}
+
+.subLinkDropdown > ul > li:hover {
+  background-color: #3c828e;
+}
+
+/* header css end */

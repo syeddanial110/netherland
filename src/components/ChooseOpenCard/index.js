@@ -53,13 +53,13 @@ const ChooseOpenCard = () => {
       >
         <CustomText
           text={"WHY CHOOSE"}
-          fontSize={{ xs: 25, md: 48 }}
+          fontSize={{ xs: '22px', md: "35px" }}
           marginRight={1.5}
           fontWeight={600}
         />
         <CustomText
           text={"OPEN SOURCE?"}
-          fontSize={{ xs: 25, md: 48 }}
+          fontSize={{ xs: '22px', md: "35px" }}
           color={"#26CB99"}
           fontWeight={600}
         />
@@ -68,7 +68,7 @@ const ChooseOpenCard = () => {
         text={`OpenSource acts as your trusted advisor, helping you reach${`\n`}OSS maturity and achieve business goals.`}
         textAlign={"center"}
         whiteSpace={"pre-line"}
-        fontSize={22}
+        fontSize={18}
         marginBottom={5}
       />
       <Grid container display={"flex"} justifyContent="center" rowSpacing={5}>
@@ -76,13 +76,13 @@ const ChooseOpenCard = () => {
           <Grid item xs={6} md={4} key={val.id}>
             <Image
               src={val.image}
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               style={{ marginBottom: 15 }}
             />
             <CustomText
               text={val.title}
-              fontSize={28}
+              fontSize={{ xs: '16px', md: "24px" }}
               whiteSpace={"pre-line"}
               fontWeight={600}
               marginBottom={1}
